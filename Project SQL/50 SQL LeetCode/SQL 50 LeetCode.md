@@ -472,8 +472,11 @@ group by p.product_name
 having sum(o.unit) >= 100;
 ```
 [1517. Find Users With Valid E-Mails](https://leetcode.com/problems/find-users-with-valid-e-mails/?envType=study-plan-v2&envId=top-sql-50)
+```sql
 select * from users
 where regexp_like(mail, '^[a-zA-Z][a-zA-Z0-9_.-]*@leetcode\\.com$', 'c')
+```
+
 
 
 
